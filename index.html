@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+        <title>Python</title>
+        <div style="position:fixed; left:43%; top:0%;"><h1 id="title">Python-Box</h1></div>
+    </head>
+    <!--<body style="background-color:powderblue;">-->
+    <body style="background-color:white;">
+        <div id="banner"></div>
+        <div id="triangle"></div>
+        <a href="tutorial.html">
+            <div class="button button1 span">
+                <text><p><span>Tutorial</span></p></text>
+            </div>
+        </a>
+        <a href="resources.html">
+            <div class="button button2 span">
+                <text><p style="font-size:18px; line-height:80%;"><span>Resources</span></p></text>
+            </div>
+        </a>
+        <a href="https://www.python.org/">
+            <div class="button button3 span">
+                <text><p style="line-height:100%; font-size: 16px;"><span>Download Python</span></p></text>
+            </div>
+        </a>
+        <div class="scroll_text">
+            <marquee direction='right' behavior="alternate">Yeah you found my website, Hope you enjoy it!!</marquee>
+        </div>
+        
+        <div id ="logo">
+            <img src="snake.png" style="height:100px; width:100px;">
+        </div>
+        
+        <div id="back"></div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="python_logo1.png" style="width:100%">
+                <div class="text"><!--Caption Text--></div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="code.png" style="position:absolute; left:18%; top:3%; width:65%; height:90%;">
+                <div class="text"><!--Caption Two--></div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="guide.jpg" style="position:absolute; left:20%; top:0%; width:60%; height:100%;">
+                <div class="text"><!--Caption Three--></div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <div class="dot1 dot" onclick="currentSlide(1)"></div> 
+            <div class="dot2 dot" onclick="currentSlide(2)"></div> 
+            <div class="dot3 dot" onclick="currentSlide(3)"></div> 
+        </div>
+        <script type="text/javascript" src="slideshow.js"></script>
+        
+        <div class="photo_box" id="photo_box1">
+            <a href="code_challenges.pdf">
+                <img src="pdf_logo.png" style=" position: absolute; height:250px; width:250px; position:center; left:10px; top:5px;">
+            </a>
+            <div style="position:absolute; bottom:-15%; left:25%;">
+                <p style="text-align:center;">Python Challenges</p>
+            </div>
+        </div>
+        
+        <div class="photo_box" id="photo_box2">
+            <a href="message.html">
+                <img src="forum_icon.png" style="position:absolute; left:12%; top:10%;">
+            </a>
+            <div>
+                <p></p>
+            </div>
+        </div>
+        
+        <a href="">
+            <div class="photo_box" id="photo_box3"></div>
+        </a>
+        
+        <div id="banner2"></div>
+        <div id="triangle2"></div>
+    </body>
+</html>
