@@ -4,7 +4,6 @@
     text-align: center;
     font-family: Tahoma;
 }
-
 #logo {
     position: absolute;
     height:100px;
@@ -12,7 +11,6 @@
     top:1%;
     right:5%;
 }
-
 /*custom banner at the top of page*/
 #banner{
     position:fixed;
@@ -47,7 +45,8 @@
 
 /*adds the scrolling text*/
 .scroll_text{
-    position:fixed; 
+    position:fixed;
+    font-family: Tahoma;
     top:80px;
     z-index:-1; 
     width:60%; 
@@ -311,4 +310,40 @@ div text p{
     width:30%;
     height:30%;
     left:30%;
+}
+
+
+#intro{
+    height:15%;
+    width:40%;
+    position:absolute;
+    top:15%;
+    left:30%;
+    color:#D5AD42;
+    font-family: Tahoma;
+    text-decoration: blink;
+    z-index:-2;
+}
+
+#basics{
+    height:10%;
+    width:30%;
+    background-color:#446785;
+    position:absolute;
+    top:30%;
+    color:#D5AD42;
+    font-family: Tahoma;
+    text-decoration: underline;
+    z-index:-2;
+}
+
+#textbox{
+    position:absolute; 
+    top:40%;
+    width:40%;
+    height:100%;
+    /*background-color: red;      only used to help position the text*/
+    font-family:Tahoma;
+    color:#D5AD42;
+    z-index:-2;
 }
