@@ -1,8 +1,8 @@
-/*custom the title*/
-#title{
-    color: #D5AD42;
+/*customise the title*/
+#title {
+    color: #d5ad42;
     text-align: center;
-    font-family: Tahoma;
+    font-family: Tahoma, Arial, sans-serif;
 }
 #logo {
     position: absolute;
@@ -24,10 +24,9 @@
 /*adds the slant at the end of the banner*/
 #triangle{ 
     position:fixed;
-    border-left: 100px solid #446785;
-    border-right: 100px solid transparent;
-    border-bottom: 0px solid transparent;
-    border-top: 100px solid transparent;
+    border-style: solid;
+    border-color: transparent transparent transparent #446785;
+    border-width: 100px 100px 0 100px;
     top:0px;
     left:60%;
     z-index: -1;
