@@ -277,6 +277,10 @@ div text p{
     top:100%;
 }
 #photo_box3{
+    background-color: white;
+    border:solid;
+    border-width:5px;
+    border-color:#446785;
     left:60%;
     top:100%;
 }
@@ -324,16 +328,37 @@ div text p{
     z-index:-2;
 }
 
-#basics{
-    height:10%;
-    width:30%;
-    background-color:#446785;
+
+#finder{
     position:absolute;
-    top:30%;
+    top:20%;
+    right:10%;
+    width:10%;
+    height:20%;
+    background-color:white;
     color:#D5AD42;
     font-family: Tahoma;
     text-decoration: underline;
     z-index:-2;
+}
+
+.header{
+    height:10%;
+    width:30%;
+    background-color:#446785;
+    position:absolute;
+    color:#D5AD42;
+    font-family: Tahoma;
+    text-decoration: underline;
+    z-index:-2;
+}
+
+#basics{
+    top:30%;
+}
+
+#Arithmatic{
+    top:145%;
 }
 
 #textbox{
