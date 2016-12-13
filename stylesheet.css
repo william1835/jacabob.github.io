@@ -81,7 +81,7 @@
   transition: 0.5s;
 }
 
-/* changes the text color of the butotn too white when hoverde over*/
+/* changes the text color of the button too white when hoverde over*/
 .button:hover span {
   padding-right: 40px;
   color:white;
@@ -313,6 +313,49 @@ div text p{
     left:30%;
 }
 
+#suprise{
+    height:35%;
+    width:25%;
+    position:fixed;
+    top:30%;
+    left:38%;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid #D5AD42;
+    font-family: Tahoma;
+    font-size: 30px;
+    text-align: center;
+}
+#text{
+    font-family: Tahoma;
+    font-size: 30px;
+    text-align: center;
+    color:#D5AD42;
+}
+#suprise:hover {
+    background-color: #D5AD42;
+    color:white;
+}
+#suprise span:after {
+  content: "The message board has being taken down untill this page is ready to be developed further!";
+  position: absolute;
+  opacity: 0;
+  top: 15%;
+  right: -20px;
+  transition: 0.5s;
+}
+#suprise:hover span {
+  padding-right:20%;
+  color:white;
+}
+#suprise:hover span:after {
+  opacity: 1;
+  right: 0;
+  color: white;
+}
+
 
 #intro{
     height:15%;
@@ -325,7 +368,6 @@ div text p{
     text-decoration: blink;
     z-index:-2;
 }
-
 
 #finder{
     position:absolute;
