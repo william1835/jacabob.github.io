@@ -5,7 +5,6 @@
         <title>Python Box</title>
         <div style="position:fixed; left:43%; top:0%;"><h1 id="title">Python-Box</h1></div>
     </head>
-    <!--<body style="background-color:powderblue;">-->
     <body style="background-color:#2d2b2b;">
         <div id="banner"></div>
         <div id="triangle"></div>
@@ -19,24 +18,27 @@
                 <text><p style="font-size:18px; line-height:80%;"><span>Resources</span></p></text>
             </div>
         </a>
-        <a href="https://www.python.org/">
-            <div class="button button3 span">
+        <div class="dropdown">
+            <div onclick="myFunction()" class="button button3">
                 <text><p style="line-height:100%; font-size: 16px;"><span>Download Python</span></p></text>
             </div>
-        </a>
+            <div id="dropdownmenu" class="dropdown-content">
+                <a href="file.txt">Windows</a>
+                <a href="file.txt">Mac OS 32 bit</a>
+                <a href="file.txt">Mac OS 64 bit</a>
+            </div>
+        </div>
+        <script type="text/javascript" src="dropdown.js"></script>
         <div class="scroll_text">
             <marquee direction='right' behavior="alternate">Yeah you found my website, Hope you enjoy it!!</marquee>
         </div>
-        
         <div id="intro">
             <h5 style="text-align: center;">Welcome to the Tutorial Page! This is where you can learn how to code in Python, the basics and other interesting things. Stay Tuned for extra updates in the future.</h5>
         </div>
-        
         <!--<div id="finder">
             <a href="tutorial.html#basics"><p>Basics</p></a>
             <a href="tutorial.html#Arithmatic"><p>Arithmatic</p></a>
         </div>-->
-        
         <div class="header" id="basics">
             <h2 style="text-align: center;">Basics - Input, Process, Output</h2>
         </div>
@@ -63,12 +65,10 @@
                 </div>
             </div>
         </div>
-        
         <!--<div class="header" id="Arithmatic">
             <h2 style="text-align: center;">Maths Arithmatic!</h2>
             <h></h>
         </div>-->
-        
         <div id="banner2"></div>
         <div id="triangle2"></div>
     </body>
