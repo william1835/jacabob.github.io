@@ -1,17 +1,31 @@
 <?php
-$target_dir = "uploads/";
-$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-$uploadOk = 1;
-$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
-// Check if image file is a actual image or fake image
-if(isset($_POST["submit"])) {
-    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-    if($check !== false) {
-        echo "File is an image - " . $check["mime"] . ".";
-        $uploadOk = 1;
-    } else {
-        echo "File is not an image.";
-        $uploadOk = 0;
-    }
+if(isset($_FILES['file'])) {
+	$file=$_FILES['file'];
+	
+	//file properties
+	$file_name = $file['name'];
+	$file_tmp = $file['tmp_name'];
+	$file_size = $file['size'];
+	$file_error = $file['error'];
+	
+	//file extension
+	$file_ext = explode('.', $file_name);
+	$file_ext = strtolower(end($file_ext));
+	
+	$allowed = array('txt', 'jpg');
+	
+	if(in_array($file_ext, $allowed)){
+		if($file_error ===0){
+			if($file_size <= 2097152){
+				$file_name_new = uniqid('', true) . '.' . $file_ext;
+				$file_destination = "uploads/" . $file_name_new;
+				
+				if(move_uploaded_file($file_tmp, $file_destination)){
+					echo $file_destination;
+				}
+			}
+		}
+	}
+	
 }
 ?>
