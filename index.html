@@ -29,11 +29,13 @@
             </div>
         </div>
         <script type="text/javascript" src="dropdown.js"></script>
-        <div class="scroll_text">
+        <div id="scroll_text">
             <marquee direction='right' behavior="alternate">Yeah you found my website, Hope you enjoy it!!</marquee>
         </div>
         <div id ="logo">
-            <img src="pictures/snake.png" style="height:100px; width:100px;">
+            <marquee behavior="scroll" direction="right">
+                <img src="pictures/snake.gif" style="height:100px; width:200px;">
+            </marquee>
         </div>
         <div id="back"></div>
         <div class="slideshow-container">
@@ -85,6 +87,19 @@
                 <img src="pictures/git.png" style="position: relative; max-height:100%; max-width:100%; position:center; object-fit:contain; left:5px">
             </a>
         </div>
+        <div id="day_text">
+            <p>Days since the first launch of the website: <span id="day"></span></p>
+            <p>Creator: Jacob Cansfield</p>
+        </div>
+        <div id="scroll_text2">
+            <marquee direction='left' behavior="" scrollamount="3"><p>Thanks to: <i>[name]</i>, <i>[name]</i>, Who contributed to this website</p></marquee>
+        </div>
+        <script type="text/javascript">
+            var today = new Date();
+            var launch_day = new Date("september 1, 2016 00:00:00");
+            var days_past = parseInt((today - launch_day)/(24*3600*1000));
+            document.getElementById("day").innerHTML=days_past;
+        </script>
         <div id="banner2"></div>
         <div id="triangle2"></div>
     </body>

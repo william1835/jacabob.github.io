@@ -7,9 +7,10 @@
 #logo {
     position: absolute;
     height:100px;
-    width:100px;
+    width:700px;
     top:1%;
-    right:5%;
+    left:60%;
+    z-index:-2;
 }
 /*custom banner at the top of page*/
 #banner{
@@ -42,16 +43,26 @@
 }
 
 /*adds the scrolling text*/
-.scroll_text{
-    position:fixed;
-    font-family: Tahoma;
+#scroll_text{
+    position:fixed; 
     top:80px;
+    font-family: Tahoma;
     z-index:-1; 
     width:60%; 
-    height:20px; 
-    background-color:#446785;
+    height:20px;
     color:white;
 }
+
+#scroll_text2{
+    color:white;
+    font-family: Tahoma;
+    font-weight:bold;
+    position:absolute; 
+    top:160%; left:50%; 
+    z-index:0;
+    height:30px; 
+}
+
 
 /*sets the buttons standards for each page*/
 .button{
@@ -355,6 +366,18 @@ div text p{
     top:150%;
     right:60%;
     z-index: -1;
+}
+
+#day_text{
+    position:absolute; 
+    top:150%; 
+    left:50%;
+    height:100px;
+    width:50%;
+    font-family: Tahoma;
+    color:white;
+    font-weight:bold;
+    
 }
 
 #comment_box{
